@@ -6235,7 +6235,7 @@ hr {
 }
 .panel-title {
   margin: 0 0 5px 0;
-  font-size: 2.5em;
+  font-size: 2.3em;
   letter-spacing: 4px;
   color: #fff;
 }
@@ -6254,8 +6254,9 @@ hr {
   width: 100%;
   max-width: none;
   height: 100%;
-  background: url("../images/background-cover.jpg") top left no-repeat #666;
-  background-size: cover;
+  background: #16222a;
+  background: -webkit-linear-gradient(to top, #16222a, #3a6073);
+  background: linear-gradient(to top, #16222a, #3a6073);
 }
 .panel-cover--collapsed {
   width: 24%;
@@ -6315,7 +6316,6 @@ hr {
   vertical-align: middle;
   position: relative;
   z-index: 800;
-  padding: 0 60px;
 }
 .panel-main__content {
   max-width: 620px;
