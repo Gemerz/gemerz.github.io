@@ -5932,7 +5932,9 @@ table td:first-child {
   width: 3%;
   text-align: center;
 }
+html,
 body {
+  height: 100%;
   width: 100%;
 }
 body:before,
@@ -5956,6 +5958,9 @@ body {
   font-size: 1em;
   color: #666;
   -webkit-font-smoothing: antialiased;
+}
+.fullscreen {
+  overflow: hidden;
 }
 ::selection {
   background: #f39ca4;
