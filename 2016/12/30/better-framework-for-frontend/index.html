@@ -1,167 +1,146 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<html class>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>前端，是reactjs還是 vuejs ? - Gemer&#39;s dev.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+
+
+
+<meta name="description" content="embrace it.">
+
+
+
+
+
+    <meta name="description" content="  只要有人的地方就有恩怨，有恩怨就會有江湖，人就是江湖。— 金庸    這段時間前端最熱鬧的事莫過於阿当老師事件 ，關於一片關於前端2016的考察，文中主要觀點是，建議新人關於前端入門更多的是注重的是基礎，寫發jquery和css等，不要去追什麼reactjs和vuejs等新潮的技術，結果引來vuejs作者和同行中許多的各種爭議。 在知乎上，觀點幾乎是一邊倒的，這也無可">
+<meta name="keywords" content="javascript,react,vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端，是reactjs還是 vuejs ?">
+<meta property="og:url" content="http://gemerz.github.io/2016/12/30/better-framework-for-frontend/index.html">
+<meta property="og:site_name" content="Gemer&#39;s dev.">
+<meta property="og:description" content="  只要有人的地方就有恩怨，有恩怨就會有江湖，人就是江湖。— 金庸    這段時間前端最熱鬧的事莫過於阿当老師事件 ，關於一片關於前端2016的考察，文中主要觀點是，建議新人關於前端入門更多的是注重的是基礎，寫發jquery和css等，不要去追什麼reactjs和vuejs等新潮的技術，結果引來vuejs作者和同行中許多的各種爭議。 在知乎上，觀點幾乎是一邊倒的，這也無可">
+<meta property="og:locale" content="zh-tw">
+<meta property="og:updated_time" content="2017-07-23T15:35:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端，是reactjs還是 vuejs ?">
+<meta name="twitter:description" content="  只要有人的地方就有恩怨，有恩怨就會有江湖，人就是江湖。— 金庸    這段時間前端最熱鬧的事莫過於阿当老師事件 ，關於一片關於前端2016的考察，文中主要觀點是，建議新人關於前端入門更多的是注重的是基礎，寫發jquery和css等，不要去追什麼reactjs和vuejs等新潮的技術，結果引來vuejs作者和同行中許多的各種爭議。 在知乎上，觀點幾乎是一邊倒的，這也無可">
+
+
+
+
+
+<link rel="icon" href="/favicon.png">
+
+
+<link href="http://fonts.font.im/css?family=Oswald|Noto+Sans|Raleway" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
     
-    <title>前端，是reactjs還是 vuejs ? | Gemer&#39;s dev.</title>
-    <meta name="renderer" content="webkit">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <meta name="description" content="Design &amp; Desert, Code &amp; Enthusiasm, Think &amp; Meaning in Life.">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="前端，是reactjs還是 vuejs ? | Gemer&#39;s dev.">
-    <meta name="twitter:description" content="Design &amp; Desert, Code &amp; Enthusiasm, Think &amp; Meaning in Life.">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="前端，是reactjs還是 vuejs ? | Gemer&#39;s dev.">
-    <meta property="og:description" content="Design &amp; Desert, Code &amp; Enthusiasm, Think &amp; Meaning in Life.">
-
     
-    <meta name="author" content="Gemer cheung">
     
-    <link rel="stylesheet" href="/css/vno.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-
     
-    <link rel="icon" href="/favicon.png">
+    
+    
+    
+    
+    
     
 
-    <meta name="generator" content="hexo"/>
-    
-    <link rel="alternate" type="application/rss+xml" title="Gemer&#39;s dev." href="/atom.xml">
     
 
-    <link rel="canonical" href="http://gemerz.github.io/2016/12/30/better-framework-for-frontend/"/>
-
-    
-    <script>
-
-</script>
 
 </head>
-
-<body class="home-template  no-js">
-<script src="/js/jquery.js"></script>
-<script src="/js/main.js"></script>
-<span class="mobile btn-mobile-menu">
-        <i class="fa fa-list btn-mobile-menu__icon"></i>
-        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
-    </span>
-
-
-<header class="panel-cover panel-cover--collapsed" style="background-image: url(linear-gradient(to top,)">
-  <div class="panel-main">
-
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
-
-        <a href="/" title="前往 Gemer&#39;s dev. 的主页"><img src="/images/logo.png" width="80" alt="Gemer&#39;s dev. logo" class="panel-cover__logo logo" /></a>
-        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for Gemer&#39;s dev.">Gemer&#39;s dev.</a></h1>
+<body>
+    
+<nav class="navbar is-transparent navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                    
+                    Gemer
+                    
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
         
-        <span class="panel-cover__subtitle panel-subtitle">life will be mark.</span>
-        
-        <hr class="panel-cover__divider" />
-        <p class="panel-cover__description">embrace it.</p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary" />
-
-        <div class="navigation-wrapper">
-          <div>
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-              <li class="navigation__item"><a href="/#blog" title="visit Blog" class="blog-button">Blog</a></li>
+        <div class="navbar-menu navbar-start">
             
-              <li class="navigation__item"><a href="https://resume.gemer.xyz">profile</a></li>
+            <a class="navbar-item " href="/archives">Archives</a>
             
-            </ul>
-          </nav>
-          </div>
-          <div>
-          <nav class="cover-navigation navigation--social">
-  <ul class="navigation">
-
-  <!-- Weibo-->
-  
-
-  <!-- Github -->
-  
-  <li class="navigation__item">
-    <a href="https://github.com/gemerz" title="查看我們的GitHub主页" target="_blank">
-      <i class='social fa fa-github'></i>
-      <span class="label">Github</span>
-    </a>
-  </li>
-
-
-<!-- Stack Overflow -->
+            <a class="navbar-item " href="https://resume.gemer.xyz">About</a>
+            
+        </div>
         
-
-  <!-- Google Plus -->
-  
-
-<!-- Facebook -->
-
-  
-<!-- Twitter -->
-
-  <li class="navigation__item">
-    <a href="https://twitter.com/gemerzhang" title="上Twitter找我們" target="_blank">
-      <i class='social fa fa-twitter'></i>
-      <span class="label">Twitter</span>
-    </a>
-  </li>
-
-  
-
-  <li class="navigation__item">
-    <a href="/atom.xml" title="RSS" target="_blank">
-      <i class='social fa fa-rss'></i>
-      <span class="label">RSS</span>
-    </a>
-  </li>
-
-
-
-  </ul>
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            
+            <a class="navbar-item" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
+    </div>
 </nav>
 
-          </div>
-        </div>
-
-      </div>
-
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            前端，是reactjs還是 vuejs ?
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2016-12-29T16:00:00.000Z" itemprop="datePublished">12月 30 2016</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/javascript/">javascript</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            10 分钟 read (About 1513 words)
+        </span>
+        
     </div>
-
-    <div class="panel-cover--overlay cover-green">
-        <div id="particles-js"></div>
-    </div>
-
-
-      <script src="/js/particles.min.js"></script>
-<script src="/js/config.js"></script>
-  </div>
-</header>
-
-<div class="content-wrapper">
-    <div class="content-wrapper__inner">
-        <article class="post-container post-container--single">
-
-  <header class="post-header">
-    <div class="post-meta">
-      <time datetime="2016-12-29T16:00:00.000Z" class="post-list__meta--date date">2016-12-30</time> &#8226; <span class="post-meta__tags tags">于&nbsp;
-  <a class="tag-link" href="/tags/javascript/">javascript</a>, <a class="tag-link" href="/tags/react/">react</a>, <a class="tag-link" href="/tags/vue/">vue</a>
-</span>
-    </div>
-    <h1 class="post-title">前端，是reactjs還是 vuejs ?</h1>
-  </header>
-
-  <section class="post">
-    <p> <br><br>  <em>只要有人的地方就有恩怨，有恩怨就會有江湖，人就是江湖。— 金庸</em><br>  <br><br>  這段時間前端最熱鬧的事莫過於<a href="https://www.zhihu.com/question/53625757" target="_blank" rel="noopener">阿当老師事件</a> ，關於一片關於前端2016的考察，文中主要觀點是，建議新人關於前端入門更多的是注重的是基礎，寫發jquery和css等，不要去追什麼reactjs和vuejs等新潮的技術，結果引來vuejs作者和同行中許多的各種爭議。</p>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p> <br><br>  <em>只要有人的地方就有恩怨，有恩怨就會有江湖，人就是江湖。— 金庸</em><br>  <br><br>  這段時間前端最熱鬧的事莫過於<a href="https://www.zhihu.com/question/53625757" target="_blank" rel="noopener">阿当老師事件</a> ，關於一片關於前端2016的考察，文中主要觀點是，建議新人關於前端入門更多的是注重的是基礎，寫發jquery和css等，不要去追什麼reactjs和vuejs等新潮的技術，結果引來vuejs作者和同行中許多的各種爭議。</p>
 <p>在知乎上，觀點幾乎是一邊倒的，這也無可厚非，這個開倒車的行為有點過失，邏輯存在 <code>Major Conflict</code>。</p>
 <p>在這個爭議中，引起我的思考的，不是技術的對比，或者雙方論點論據的優越，而是對於前端的認知，一個心理的行為認知。</p>
 <p>對於非科班出身的，當初進入編程行，莫過於前端與php的入門，這也是至今說php是最好語言的一個表述，因為當時入門的最容易的就是php+mysql+jquery這一套東西。對於當時只有pc的年代，另一套是java系列。</p>
@@ -184,6 +163,8 @@
 <p>兩者有什麼不同？可以講都是人，可以講男女之別。</p>
 <blockquote>
 <p>reactjs 就像男生一樣，想法多，得想到方方面面，但風氣就如農村的重男輕女，習慣繼承皇位。</p>
+</blockquote>
+<blockquote>
 <p>vuejs 就像女生一樣，嬌小，思維直觀，<code>template</code> <code>javascript</code> <code>style</code>， 每個 <code>componet</code> 像 derivative 可自義聲明，有點女孩子富養的感覺。對於習慣MVC思維有一個好的幫助。</p>
 </blockquote>
 <p>那 angular 4呢 angular 2開始 <code>typescript</code> 寫，入門門檻更高，也採用新時代特性，習慣 <code>flowtype</code>和強類型的前端有了一個更好的選擇。</p>
@@ -191,22 +172,240 @@
 <p><br><br><br><br><br></p>
 <p></p>
 
-  </section>
-
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/javascript/">#javascript</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/react/">#react</a></span>
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/vue/">#vue</a></span>
+    
+    </div>
+    
+    
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
+            
+            <a href="/2017/03/02/react-luckdraw/">寫一個react抽獎輪盤compoent</a>
+            
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
+            
+            <a href="/2016/03/10/font-problem/">前端開發時,字體下多端多环境顯示選擇</a>
+            
+        </span>
+    </div>
+    
 </article>
 
 
+<div class="sharebox">
+    
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
 
-        <footer class="footer">
-    <span class="footer__copyright">
-        &copy; 2018 - <a href="/">@Gemer Cheung</a>
-    </span>
-</footer>
-
-    </div>
 </div>
 
 
- 
+
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
+    
+<div id="disqus_thread">
+    
+    <div class="notification is-danger">
+        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
+    </div>
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2019 Gemer&nbsp;
+            </div>
+            <div class="column is-hidden-mobile"></div>
+<!-- 
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" title="GitHub" href="https://github.com/gemerz">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+             -->
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("zh-CN");
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+      })
+    </script>
+
+    
+    
+
+    
+
+
+<script src="/js/script.js"></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script>
+    
 </body>
 </html>
