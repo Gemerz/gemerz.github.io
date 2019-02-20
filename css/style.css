@@ -11,19 +11,6 @@ a.tag.article-tag {
   font-size: 0.9rem;
   text-decoration: none; }
 
-.home .article-entry {
-  max-height: 500px;
-  overflow: hidden;
-  position: relative; }
-  .home .article-entry:before {
-    content: '...';
-    font-size: 18px;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    right: 0;
-    bottom: -10px; }
-
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 800px;
