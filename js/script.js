@@ -1,9 +1,9 @@
 (function ($) {
-    // $('.navbar-burger').click(function () {
-    //     $(this).toggleClass('is-active');
-    //     $('.navbar-main .navbar-start').toggleClass('is-active');
-    //     $('.navbar-main .navbar-end').toggleClass('is-active');
-    // });
+    $('.navbar-burger').click(function () {
+        $(this).toggleClass('is-active');
+        $('.navbar-main .navbar-start').toggleClass('is-active');
+        $('.navbar-main .navbar-end').toggleClass('is-active');
+    });
 
     // Hide Header on on scroll down
     var didScroll;
