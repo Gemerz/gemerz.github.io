@@ -2,7 +2,7 @@
 <html class>
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>写个readhub.me的electron版本。 - Gemer&#39;s dev.</title>
+<title>写个readhub.me的electron版本。 - Gemer Cheung Blog.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -21,7 +21,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="写个readhub.me的electron版本。">
 <meta property="og:url" content="http://gemerz.github.io/2017/07/23/readhubtron/index.html">
-<meta property="og:site_name" content="Gemer&#39;s dev.">
+<meta property="og:site_name" content="Gemer Cheung Blog.">
 <meta property="og:description" content="之前在做一個項目用的就是electron,發現electron前端交互真是方便，不過之前內置go版tts在node，用child press run就可以，結果內存真是顯高，畢竟不是原生的mac os。之前看大輝老師的readhub.me上線，我算是小道消息的老用戶（只是接收端，低社交人士），發現這個產品真不錯，以前也有個想法用spide去抓。當时腦一熱就用electron＋React+r">
 <meta property="og:locale" content="zh-tw">
 <meta property="og:image" content="https://download.gemer.xyz/soucre/images/tfc/animation-600.gif">
@@ -98,7 +98,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="검색" href="javascript:;">
+            <a class="navbar-item search" title="Search" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -137,7 +137,7 @@
         <span class="column is-narrow">
             
             
-            2 分钟 소요 (약 264 단어)
+            2 分钟 read (About 264 words)
         </span>
         
     </div>
@@ -347,7 +347,7 @@
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="아무거나 입력하세요">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -359,11 +359,11 @@
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: '글',
-                PAGES: '페이지',
-                CATEGORIES: '카테고리 목록',
-                TAGS: '태그 목록',
-                UNTITLED: '(제목없음)',
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
         };
