@@ -11,6 +11,9 @@ a.tag.article-tag {
   font-size: 0.9rem;
   text-decoration: none; }
 
+table {
+  border: 1px solid #dbdbdb; }
+
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 800px;
