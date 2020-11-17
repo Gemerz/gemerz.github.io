@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
 <title>Gemer Cheung Blog.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -116,6 +116,60 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
+            <a href="/2020/08/25/wits/" itemprop="url">Samsung 开发TIP (1) --- wits开发与介绍</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-08-24T16:00:00.000Z" itemprop="datePublished">8月 25 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/team/">team</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            4 分钟 read (About 604 words)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p><img src="https://user-images.githubusercontent.com/11974693/73414912-a2267f80-4353-11ea-9685-fefb09d8e6b5.jpg" alt="samsung-wits"></p>
+<p>开发Samsung TV也一段时间了，经常过<a href="https://developer.tizen.org/development/tizen-studio/web-tools/cli?langredirect=1" target="_blank" rel="noopener">tizen cli </a>及sdb connect 的折磨（小声点，sdb是samsung基于adb的二次开发,各种阉割…）后迎来一个算是不错hot-reload开发，但由于电视的基于sdb push的更新+ wgt-&gt; 解压-&gt; iframe包着当前包的. 下面来简单介绍安装方法。</p>
+<h4 id="1-安装WITs依赖"><a href="#1-安装WITs依赖" class="headerlink" title="1.  安装WITs依赖"></a>1.  安装WITs依赖</h4><figure class="highlight sh hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="hljs-built_in">cd</span> ~/&#123;path-to&#125;/Wits</span><br><span class="line">$ npm install -g</span><br></pre></td></tr></table></figure>
+<h4 id="2-更改-witsconfig-json-在-Wits-的目录内"><a href="#2-更改-witsconfig-json-在-Wits-的目录内" class="headerlink" title="2. 更改 .witsconfig.json 在 Wits 的目录内."></a>2. 更改 <code>.witsconfig.json</code> 在 <code>Wits</code> 的目录内.</h4><p>The default <code>path</code> is <code>tizen-studio-data/profile/profiles.xml</code> on Mac and Windows both.<br>配置对应的 Tizen Studio 证书 Profile  <code>path</code> profiles.xml所对应的路径到<br><strong>.witsconfig.json</strong><br>默认 <code>path</code>是 <code>tizen-studio-data/profile/profiles.xml</code> 都在mac与Windows系统上。</p>
+<h2 id="系统要求"><a href="#系统要求" class="headerlink" title="系统要求"></a><strong>系统要求</strong></h2><p>WITs 需要进一步地在你本地开发机器上配置对应的的步骤。</p>
+<h4 id="1-打开-Terminal（终端器）-on-MacOS-Linux-or-CMD-（命令提示符）-PowerShell-on-Windows"><a href="#1-打开-Terminal（终端器）-on-MacOS-Linux-or-CMD-（命令提示符）-PowerShell-on-Windows" class="headerlink" title="1. 打开 Terminal（终端器） on MacOS / Linux or CMD （命令提示符） / PowerShell on Windows"></a>1. 打开 <strong><code>Terminal（终端器）</code> on MacOS / Linux</strong> or <strong><code>CMD （命令提示符）</code> / <code>PowerShell</code> on Windows</strong></h4><h4 id="2-安装-Node-js-和-Git-推荐-v7-10-1"><a href="#2-安装-Node-js-和-Git-推荐-v7-10-1" class="headerlink" title="2. 安装 Node.js 和 Git (推荐 v7.10.1 ~)"></a>2. 安装 Node.js 和 Git (推荐 v7.10.1 ~)</h4><p>我们不能很好告诉你这些安装步骤，因为有太多方法与开发者各有自己的性能配置，但我们推荐你使用一些，例如 <code>nvm</code> 或 <code>asdf</code> 等的项目管理器去管理不同的Node.js 版本去控制你的代码项目。</p>
+<h4 id="3-安装最新的-Samsung-Tizen-Studio"><a href="#3-安装最新的-Samsung-Tizen-Studio" class="headerlink" title="3. 安装最新的 Samsung Tizen Studio."></a>3. 安装最新的 <a href="http://developer.samsung.com/tv" target="_blank" rel="noopener">Samsung Tizen Studio</a>.</h4><h4 id="4-打开你的Samsung电视上的开发者模式："><a href="#4-打开你的Samsung电视上的开发者模式：" class="headerlink" title="4. 打开你的Samsung电视上的开发者模式："></a>4. 打开你的Samsung电视上的开发者模式：</h4><ul>
+<li>1 With your Samsung Remote, press the <code>Home</code> button.</li>
+<li>1 使用你的三星遥控器，按 <code>Home</code> 的按键。</li>
+<li>2 Navigate to the <code>Apps</code> button and press <code>Enter/OK</code>.</li>
+<li>2 移动所选到  <code>Apps</code> 的按键并按 <code>Enter/OK</code>。</li>
+<li>3 When on the <code>Apps</code> screen, press <code>1</code> <code>2</code> <code>3</code> <code>4</code> <code>5</code> in order on the remote to open the <code>Developer Mode Dialog</code>. If this doesn’t work, try it again.</li>
+<li>3 如当前显示<code>Apps</code> 屏幕，依次在遥控器上按<code>1</code> <code>2</code> <code>3</code> <code>4</code> <code>5</code>并同时弹出<code>开发模式对话框</code>，如果不成功或不出现，再一次尝试。</li>
+<li>4 When the Developer Mode Dialog appears, toggle the switch to <code>On</code> and enter the IP address of your development machine.</li>
+<li>4 当开发者对话框出现， 切换并点击按钮 <code>On</code> 和 输入你的开发机器所对应的IP地址。</li>
+</ul>
+<p>当然，官方的中繁都是我翻译的的，见:<br><a href="https://github.com/Samsung/Wits/blob/master/doc/README_zh_HANS.md" target="_blank" rel="noopener">https://github.com/Samsung/Wits/blob/master/doc/README_zh_HANS.md</a><br><a href="https://github.com/Samsung/Wits/blob/master/doc/README_zh_HANT.md" target="_blank" rel="noopener">https://github.com/Samsung/Wits/blob/master/doc/README_zh_HANT.md</a></p>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
             <a href="/2019/01/15/meet-nestjs/" itemprop="url">Nestjs，刚好遇上你，还好不放弃。</a>
         
     </h1>
@@ -126,7 +180,7 @@
         
         <span class="column is-narrow article-category">
             <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/team/">team</a>
+            <a class="article-category-link" href="/categories/TV/">TV</a>
         </span>
         
         
@@ -141,7 +195,7 @@
     
         <p>对于我来说，过往是开发php symfony/laravel，或用过python django,java spring/boot等framework来说，对于这几个优秀主流企业级的框架，无论人气与生态，<br>都是业务层必选和考虑的问题，是否再做框架，类似框架也是吸收其中优秀的理念和解藕逻辑，相信每一个从后端转向前端的，或者全栈的工程师来说，用nodejs来写业务层或者项目总体来说，还是很难达到一个企业级的标准。当然也有很多优秀的framework.<br>express/koa，只能处理轻量级业务，尽量有许多版本的，如sailjs和Meteorjs等，但怎么也难有达到企业级需求，相对阿里也出现eggjs，但是社区力度不够，主core在koa1往koa2,当然也使用一短时间，对于习惯使用ORM/ODM的，sequelize尝可以应付，但优化及主从相对doctrine的成熟还是差不了很多。加js弱语言，想升到企业级多人开发，还是有点信心不足。毕竟我们没有阿里这么node专家。他们还有女鸟哥。😂（张秋怡）</p>
 <p>不过之前也看过<a href="https://cnodejs.org/topic/5ab233b8f5dfc27d7ad98a2c" target="_blank" rel="noopener">NestJS：我们一直在等待的精美的Node.js框架</a>，这文章过早看过，但只简单的介绍。但没有真正与主流框架对比过。</p>
-<p>现在nestjs已到v4，以typescript为开发框架实属为少，但必属精良，</p>
+<p>现在nestjs已到v4，以typescript为开发框架实属为少，但必属精良。</p>
 
     
     </div>
@@ -298,47 +352,6 @@
 
 
     
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/2017/11/01/new-stage/" itemprop="url">新的开始， 走出大珠海....</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2017-10-31T16:00:00.000Z" itemprop="datePublished">11月 1 2017</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/feeling/">feeling</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            2 分钟 read (About 365 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <p>休息2个多月，想了很多东西，规划了部分自己的计划，发现自己在岗位工作了差不多了三年半，是时候走出自己的comfort zone.生活从来者是不易，只是否多尝试。</p>
-<p>不过非常感谢之前的团队，非常感谢老板kary,Tim, CTO jack，感谢同事paul,marqius,dan，leo charley等，在港澳公司上班，公司的氛围很好，技术栈很深，接触了很多的应用场景，不只是前端或后端，更重要是整个项目的推进等把控，做为珠海部技术负责人及公司前端部负责人，从团队分部二个人到10多人，感受了到小公司发展难能可贵的经验。这个是在其他初创感受不到。</p>
-<p>人将30而惑，这是每个人都会经过的，公司的本质上发展与自己所规划有所不同，自己内心虽不是当时那勇气少年，但慢慢发现国内的使用场景毕竟领先世界的，如小程序，react native等敏捷开发。所以为技术也好，为前途也好，分手是对双方最好。</p>
-<p>最后很不舍得，不舍得离开，但不得不离开，天下无不散之筵席，祝大家越来越好！<br><br><br><br><br><br></p>
-
-    
-    </div>
-    
-    
-</article>
-
-
-
-
-    
     
         
 <nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
@@ -365,7 +378,7 @@
     <div class="container">
         <div class="columns content">
             <div class="column is-narrow has-text-centered">
-                &copy; 2019 Gemer cheung&nbsp;
+                &copy; 2020 Gemer cheung&nbsp;
             </div>
             <div class="column is-hidden-mobile"></div>
 <!-- 
