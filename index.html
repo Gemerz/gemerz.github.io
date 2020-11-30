@@ -93,7 +93,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Search" href="javascript:;">
+            <a class="navbar-item search" title="검색" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -116,7 +116,59 @@
         <article class="article content gallery" itemscope itemprop="blogPost">
     <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
         
-            <a href="/2020/08/25/wits/" itemprop="url">Samsung 开发TIP (1) --- wits开发与介绍</a>
+            <a href="/2020/08/28/tizen-webos/" itemprop="url">tvOS, tizen  与 webos 路在何况 ？</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2020-08-27T16:00:00.000Z" itemprop="datePublished">8月 28 2020</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/travel/">travel</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            7 分钟 소요 (약 1066 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    
+        <p>在如今看，tizen与webos这对韩国半代工技术的电视平台的由于廉价的原因，可以说在电视OS的如手机的apple与google两家阵型，但是随着技术的发展，加上apple OS与andoird TV的发力，在全球份额来说，Samsung与LG的份额也随着减少与被跳战，而更有趣的方面是，samsung随着手机市场的失控，近来的TV的tizen可说的没有什么突破，更严重来说，一直就那里，反观，LG上，技术由于一定利用开源linux做为基核，随着来说，体验稳定，稍为有好转，份额有所增加，但是这对难受在2020第一季节占根据statista的市场调查数据显示，tizen为11%, webos为 7%。<br>从2019年在公司所有看到tizen 15%，webos为6%的信息，tizen是有所下降的。</p>
+<p><img src="https://user-images.githubusercontent.com/60084718/100586429-1cd07a80-332a-11eb-8c6f-8ea8c48427af.png" alt="WX20201130-141931@2x"></p>
+<p>以下从技术发展来谈谈这对这两平台发展方向：</p>
+<p>##技术体系：<br>|       | Samsung tizen           | LG Webos          | 总结|<br>|———-|————————-|——————-|—— |<br>| 开发语言  | 1. Web/js 2.native C++ | 1.Web/js 2.QT QML |  C++/QML有难度 市场偏少，总体是以js开发为主,人工成本低|<br>| 开发IDE | Tizen studio            | None              |  Tizen studio是eclispe二次开发，内存性能不足，证书配置难度大，要samsung account (3.7),不建议以Tizen开发|<br>|    开发及开发者周边   |         官方文档，社区开发帮助不大，欠维护                |                   官方文档，有开源OSE, github上多个方向      |  大部分在stackflow|<br>| 开发调试    |       有新开发工具wits                  |         有ares-cli          |  调试相对低来说， LG更显得理念好一些，都有自家的CLI|<br>|    模似器   |  都是基本java的vitrual linux image | 都是基本java的vitrual linux image          | 模似器除旧，与真机出入都很大，对于官方部doc spec有效 | 建议大多数真机</p>
+<p>###以上是两个平台的技术要数：</p>
+<h4 id="Samsung"><a href="#Samsung" class="headerlink" title="Samsung"></a>Samsung</h4><p> samsung的自家播放avplayer 可以讲各种问题，buffer 与codec的MSE各版本不一，假如片源有许多不一的flag, 或者没有自己HLS的优化体系，在三星可以讲各种小问题出现。</p>
+<h3 id="LG"><a href="#LG" class="headerlink" title="LG"></a>LG</h3><p>总体来说，对开源的播放器支持的蛮好的。</p>
+<p>##上线周期：</p>
+<p>由于三星与LG都是同一样市场合作模式，因为电视都是parent合作模式，都是使用人工QA模式，所以上线从提交到发布最起码在一个月间，假如中途取消，要起码一个月为计数。</p>
+<p>#总结</p>
+<p>由全球的OTT团队中都是他们的合作伙伴，以AWS，GOOGLE, NETFLEX, flex, disney都是他们的顶级合作伙伴，留意到是这些顶级合作伙伴的QA是比我现在的团队快出半个月时间左右。对于这两平台的前景发展及分析，大部分都只是到维持这个产品完整度的一个水平，随着技术的更新，加上电视的寿命的周期长，导致技术更新水平过慢。</p>
+<p>但是近年从sony转战androidTV平台，及samsung自家也有意放弃，未来一定在tizen平台慢慢放弃。</p>
+<p>反观APPLE TV+以及google也有意对TV的增加资源，我觉得更重要的一点，现行这两家技术难以支持往后4K或6K，8K的时代，apple与google TV的market现在也有各种审核机制可能对mobile来说是delay那一两天时间，所以从技术与市场及准入管理来说，apple与google TV的份额一定逐年提高。</p>
+<p>##国内：<br> 因为由于我们国内的布局好，现行是android自家定制的独大，appleTV的没有进入加上版权问题，也有tencent与芒果TV布局这两个小市场，但国内的审核机制也应该如此。</p>
+<p> 以上只个人一些理解， 这两平台会随着技术更新与慢慢淡去。</p>
+
+    
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2020/08/25/wits/" itemprop="url">Samsung tv 开发TIP (1) --- wits开发与介绍</a>
         
     </h1>
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
@@ -133,7 +185,7 @@
         <span class="column is-narrow">
             
             
-            4 分钟 read (About 604 words)
+            4 分钟 소요 (약 604 단어)
         </span>
         
     </div>
@@ -187,7 +239,7 @@
         <span class="column is-narrow">
             
             
-            3 分钟 read (About 420 words)
+            3 分钟 소요 (약 420 단어)
         </span>
         
     </div>
@@ -207,159 +259,14 @@
 
 
     
-        <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
-        
-            <a href="/2019/01/10/how-to-build-little-frontend-team/" itemprop="url">如何建设一个支有初有成效的前端小团队？</a>
-        
-    </h1>
-    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
-        <span class="column is-narrow">
-            <time datetime="2019-01-09T16:00:00.000Z" itemprop="datePublished">1月 10 2019</time>
-        </span>
-        
-        <span class="column is-narrow article-category">
-            <i class="far fa-folder"></i>
-            <a class="article-category-link" href="/categories/team/">team</a>
-        </span>
-        
-        
-        <span class="column is-narrow">
-            
-            
-            6 分钟 read (About 946 words)
-        </span>
-        
-    </div>
-    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
-    
-        <p><img src="https://minos-image.oss-cn-beijing.aliyuncs.com/2019-02-19-46be62a6a2b00e41_seal_about_web_1400x440.jpg" alt></p>
-<hr>
-<blockquote>
-<p>所谓管理者只是大集团下的小公司的CEO.</p>
-</blockquote>
-<hr>
-<p>前段时间在拜读刘轶的团队管理经验，如下：</p>
-<ol>
-<li><a href="https://juejin.im/post/5c29da4fe51d450d97071ca3" target="_blank" rel="noopener">技术团队管理笔记(一)-识人 - 掘金</a></li>
-<li><a href="https://juejin.im/post/5c31f5cd6fb9a049e12a5bfa" target="_blank" rel="noopener">技术团队管理笔记(二)-带人 - 掘金</a></li>
-<li><a href="https://juejin.im/post/5c31f65fe51d45517624aa2c" target="_blank" rel="noopener">技术团队管理笔记(三)-用人 - 掘金</a></li>
-</ol>
-<p>的确，在来到西洋汇公司前端差不多一年，过了差不多8个月才可以开始扩建团队到6人以上，以我过往带10+人的团队的经验相比而言，现在才可以有有点像样的小团队，不过相对两个产品线，电商行业务分布问题不太像过往外包公司一样，可以同时掌握20+项目的动态。不过在带团队这几年得到经验，当然最理想的状态就是如刘轶的100+人和6直属的状态，但事实上，我们大部分创业都是团队小作坊，往在3-10左右的小团队（实际就3-6）左右，文中所提到的，团队分级，我觉得比较有意思,当然识人-带人-用人更多强调从上面下的方向。</p>
-<table>
-<thead>
-<tr>
-<th>类别</th>
-<th>定义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>优秀的工程师</strong></td>
-<td>技术优秀，认同公司目标，有很强的自驱力，喜欢发现问题，解决问题</td>
-</tr>
-<tr>
-<td><strong>有一定工程师思维的潜力程序员</strong></td>
-<td>认同公司目标，有很强的自驱力，技术尚在快速成长期</td>
-</tr>
-<tr>
-<td><strong>有一定工程师思维的普通程序员</strong></td>
-<td>认同公司目标，有很强的自驱力，技术潜力一般</td>
-</tr>
-<tr>
-<td><strong>熟练的程序员</strong></td>
-<td>技术比较扎实，但是没有太多工程师思维</td>
-</tr>
-<tr>
-<td><strong>普通程序员</strong></td>
-<td>技术一般，也没有太多工程师思维 </td>
-</tr>
-</tbody>
-</table>
-<p>所以相比而言，我更偏向美剧Seal Team 那样粗白简单的有效的团队配置：</p>
-<table>
-<thead>
-<tr>
-<th>Bravo one:</th>
-<th>Seal Team队长，团队大脑，制定方向或策略，实现技术方向，及团队推进等。</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bravo Two:</td>
-<td>Seal Team lieutenant,副手，团队重要成员，协调队长命令，更多分析现场，对队长方案提出进一个补充，及传递执行到团队。</td>
-</tr>
-<tr>
-<td>Bravo THERE:</td>
-<td>Seal Team Breacher,突破手，攻破敌人防线及技术防线。</td>
-</tr>
-<tr>
-<td>Bravo FOUR:</td>
-<td>Seal Team Assaulter，攻击手，执行单位业务。 </td>
-</tr>
-<tr>
-<td>Bravo  FIVE:</td>
-<td>Seal Team Rifleman/Radioman, 狙击手，提供信息及击倒出其不意的敌人。</td>
-</tr>
-<tr>
-<td>Bravo  SIX:</td>
-<td>Seal Team Grenadier/Supporter, 爆破手,后勤。</td>
-</tr>
-</tbody>
-</table>
-<p>其实换言之：</p>
-<table>
-<thead>
-<tr>
-<th>Bravo one:</th>
-<th>组长。</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bravo Two:</td>
-<td>有一定工程师思维的潜力程序员</td>
-</tr>
-<tr>
-<td>Bravo THERE:</td>
-<td>有一定工程师思维的普通程序员</td>
-</tr>
-<tr>
-<td>Bravo FOUR:</td>
-<td>熟练的程序员</td>
-</tr>
-<tr>
-<td>Bravo  FIVE:</td>
-<td>普通程序员</td>
-</tr>
-<tr>
-<td>Bravo  SIX:</td>
-<td>实习生。</td>
-</tr>
-</tbody>
-</table>
-<p>其实队长将更多精力与资源放在在2-3位置中，其余更是良好团队化学反应下，2-4去带领，队长更提供大方向，技术细节更多3-6去跟2-4学习，这样达到有效人员带领与学习及有效运转。亦是现在美军非规技术小队非常有效的一个执行团队。</p>
-<p>细看，其实现在很多大公司下，很多业务线下，其实配置就是这种有效的小团队，6人下的配置非常有效。但一般的小公司多条业务线下只不同不同配套设置。</p>
-<p>以上只是一些想法及愚见。</p>
-
-    
-    </div>
-    
-    
-</article>
-
-
-
-
-    
     
         
 <nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
     <div class="pagination-previous is-invisible is-hidden-mobile">
-        <a href="/page/0/">Prev</a>
+        <a href="/page/0/">이전</a>
     </div>
     <div class="pagination-next">
-        <a href="/page/2/">Next</a>
+        <a href="/page/2/">다음</a>
     </div>
     <ul class="pagination-list is-hidden-mobile">
         
@@ -368,6 +275,8 @@
         <li><a class="pagination-link" href="/page/2/">2</a></li>
         
         <li><a class="pagination-link" href="/page/3/">3</a></li>
+        
+        <li><a class="pagination-link" href="/page/4/">4</a></li>
         
     </ul>
 </nav>
@@ -529,7 +438,7 @@
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="아무거나 입력하세요">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -541,11 +450,11 @@
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                POSTS: '글',
+                PAGES: '페이지',
+                CATEGORIES: '카테고리 목록',
+                TAGS: '태그 목록',
+                UNTITLED: '(제목없음)',
             },
             CONTENT_URL: '/content.json',
         };

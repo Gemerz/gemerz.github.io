@@ -2,7 +2,7 @@
 <html class>
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>목록: 2019/1 - Gemer Cheung Blog.</title>
+<title>Gemer Cheung Blog.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
@@ -19,7 +19,7 @@
     <meta name="description" content="embrace it.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Gemer Cheung Blog.">
-<meta property="og:url" content="http://gemerz.github.io/archives/2019/01/index.html">
+<meta property="og:url" content="http://gemerz.github.io/page/4/index.html">
 <meta property="og:site_name" content="Gemer Cheung Blog.">
 <meta property="og:description" content="embrace it.">
 <meta property="og:locale" content="zh-tw">
@@ -110,29 +110,77 @@
     </div>
 </nav>
 
-    <section class="section">
+    <section class="section home">
     <div class="container">
     
+        <article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            <a href="/2016/03/10/font-problem/" itemprop="url">前端開發時,字體下多端多环境顯示選擇</a>
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2016-03-09T16:00:00.000Z" itemprop="datePublished">3月 10 2016</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/css/">css</a>
+        </span>
+        
+        
+        <span class="column is-narrow">
+            
+            
+            3 分钟 소요 (약 481 단어)
+        </span>
+        
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <div class="archive content">
-            <h4 class="title is-4" id="2019">2019</h4>
-            <div class="articles">
-            
-                <div class="article content>">
-                    <time class="is-text-small" datetime="2019-01-14T16:00:00.000Z" itemprop="datePublished">
-                        1月 15</time>
-                    <h6 class="title is-6"><a href="/2019/01/15/meet-nestjs/">Nestjs，刚好遇上你，还好不放弃。</a></h6>
-                </div>
-            
-                <div class="article content>">
-                    <time class="is-text-small" datetime="2019-01-09T16:00:00.000Z" itemprop="datePublished">
-                        1月 10</time>
-                    <h6 class="title is-6"><a href="/2019/01/10/how-to-build-little-frontend-team/">如何建设一个支有初有成效的前端小团队？</a></h6>
-                </div>
-            
-            </div>
-        </div>
+        <p>在國內前端中,我比較欣賞的字體選擇,我是比較欣賞,sofish的<a href="https://github.com/sofish/typo.css" title="type.css" target="_blank" rel="noopener">type.css</a>和lepture的<a href="https://github.com/lepture/yue.css/blob/master/yue.css" title="yue.css" target="_blank" rel="noopener">yue.css</a> 两者都在跨平台做得不错.先看下他们的关于字体的处理.  </p>
+<h3 id="type-css的font处理"><a href="#type-css的font处理" class="headerlink" title="type.css的font处理:"></a>type.css的font处理:</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">font: 300 1em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB,</span><br><span class="line">      Microsoft Sans Serif, WenQuanYi Micro Hei, sans;</span><br></pre></td></tr></table></figure>
+<h3 id="yue-css的font处理"><a href="#yue-css的font处理" class="headerlink" title="yue.css的font处理:"></a>yue.css的font处理:</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">font: 400 18px/1.62 <span class="hljs-string">"Georgia"</span>, <span class="hljs-string">"Xin Gothic"</span>, <span class="hljs-string">"Hiragino Sans GB"</span>, <span class="hljs-string">"Droid Sans Fallback"</span>,</span><br><span class="line"> <span class="hljs-string">"Microsoft YaHei"</span>, sans-serif;</span><br></pre></td></tr></table></figure>
+<p>type.css在標準網頁端和移動端都相對標準,1em的字體(相當於16px),1.8行距,而yue.css在文字上向在繁體與字體顯得更大.更好看.所以簡書也用這個設置.  </p>
+<p>但可以說兩者在簡體上和osx平臺都相當不錯的選擇,但在繁體下.yue相對type的選擇好相對好些.但我發現,並不那些完美.特別是IE11下.出現許多問題.</p>
+<p>在windows中，特別是繁體網頁中，建議還是做一個關於平臺 css flag，繁體下windows 最優選擇是微軟正黑體 <code>Microsoft JhengHei</code>，但假如用繁體環境去看解析簡體，又要出現各中字符不一。所以做好每個語言加flag是最好的選擇。</p>
+<p>在處理日文方面，也不是用通用的字體，因在windows那字體真不好。建議用：因為：<code>ヒラギノ角ゴ Pro W3</code>,算是日文能行處理比較好。<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font-family: <span class="hljs-string">"ヒラギノ角ゴ Pro W3"</span>, <span class="hljs-string">"Hiragino Kaku Gothic Pro"</span>, <span class="hljs-string">"メイリオ"</span>, Meiryo, Osaka, <span class="hljs-string">"ＭＳ Ｐゴシック"</span>, <span class="hljs-string">"MS PGothic"</span>, sans-serif;</span><br></pre></td></tr></table></figure></p>
+<p>在處理葡萄牙语歐美系，用 <code>Helvetica Neue</code> 會比較好。在處理韓國等選擇方些的字體會比較優勢，建議用 <code>pt sans</code> google fonts有。</p>
+<p>至於其他語系字體最優化選擇還是更多了解。</p>
+<p><br><br><br><br><br></p>
+
     
+    </div>
+    
+    
+</article>
+
+
+
+
+    
+    
+        
+<nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
+    <div class="pagination-previous">
+        <a href="/page/3/">이전</a>
+    </div>
+    <div class="pagination-next is-invisible is-hidden-mobile">
+        <a href="/page/5/">다음</a>
+    </div>
+    <ul class="pagination-list is-hidden-mobile">
+        
+        <li><a class="pagination-link" href="/">1</a></li>
+        
+        <li><a class="pagination-link" href="/page/2/">2</a></li>
+        
+        <li><a class="pagination-link" href="/page/3/">3</a></li>
+        
+        <li><a class="pagination-link is-current" href="/page/4/">4</a></li>
+        
+    </ul>
+</nav>
     
     </div>
 </section>
